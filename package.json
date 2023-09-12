@@ -49,5 +49,6 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.2"
-  }
+  }, 
+  "homepage": "https://jelenaandj.github.io/movieapp"
 }
