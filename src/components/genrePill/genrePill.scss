@@ -1,0 +1,29 @@
+@import '../../styleConfig/variables.scss';
+
+
+.pill{
+color: $color-pill-gray;
+/* Link/Regular */
+font-size: 16px;
+font-family: 'Poppins-Regular';
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.32px;
+padding: 8px 32px;
+margin: 5px;
+border-radius: 8px;
+cursor: pointer;
+&:hover{
+    color: $color-hovered;
+}
+}
+.pill--active{
+    background-color: $color-primary;
+    & p{
+        color: $color-letter-white;
+    }
+}
+.pill--active:hover{
+    background-color: $color-active-link;
+
+}

@@ -1,0 +1,84 @@
+@import '../../styleConfig/variables.scss';
+@import '../../styleConfig/typography.scss';
+
+.movie-card{
+    box-sizing: border-box;
+    height: 480px;
+    background-color: $color-title-card;
+    border-radius: 12px;
+    position: relative;
+    & button{
+        position: absolute;
+        transform: translate(-50%,-50%);
+
+    }
+    &__img{
+        border-radius: 12px;
+        margin: 8px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        position: relative;
+        top: 8px;
+        
+    }
+    &__title{
+        margin: 24px 16px;
+        font-size: 16px;
+        font-family: 'Poppins-Regular';
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        color: $color-letter-white;
+        position: absolute;
+        bottom: -70px;
+    }
+    &:hover{
+        .movie-card--hovered{
+            border-radius: 12px;
+            // display: none;
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            background: rgba(4, 4, 4, 0.79);
+            z-index: 10;
+            & a{
+                display: block;
+                // background-color: $color-primary;
+                color: $color-letter-white;
+                padding: 8px 32px;
+                width: fit-content;
+            }
+        }
+    }
+    &--hovered{
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        // display: block;
+        & a{
+            display: none;
+        }
+        // &:hover{
+        //     z-index: 10;
+        //     position: absolute;
+        //     top: 0;
+        //     background: rgba(4, 4, 4, 0.79);
+        //     z-index: 10;
+        //     & a{
+        //         display: block;
+        //         background-color: $color-primary;
+        //         color: $color-letter-white;
+        //         padding: 8px 32px;
+        //         width: fit-content;
+        //         border-radius: 8px;
+        //     }
+        // }
+    }
+}
+.star-wrapper{
+    position: relative;
+    z-index: 50;
+    left: 15px;
+    top: 76px;
+}

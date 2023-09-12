@@ -1,0 +1,136 @@
+@import '../styleConfig/variables.scss';
+
+.btn{
+    color: $color-heading-gray;
+    // position: absolute;
+    border: none;
+    padding: 17px 32px;
+    background-color: $color-primary;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Poppins-Regular';
+    line-height: 24px;
+    border-radius: 12px;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    // transform: translate(-50%,-50%);
+    &--small{
+        width: fit-content;
+        &--delete{
+            background-color: $color-error-600;
+        }
+        &--edit{
+            background-color: $color-success;
+            // margin: 50px;
+        }
+    }
+    &:hover{
+        background-color: $color-active-link;
+    }
+    &--link{
+        color: $color-heading-gray;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        margin-top:52px ;
+        cursor: pointer;
+
+    }
+}
+.star{
+    display: flex;
+    border-radius: 8px;
+    height: 40px;
+    width: 32px;
+    padding: 4px 8px;
+    align-items: center;
+    z-index: 50;
+    gap: 4px;
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    &--bckground{
+        background: $color-black-65;
+
+    }     
+}
+.inputs-container{
+   position: relative;
+   margin-bottom: 28px;
+}
+.inputs--error{
+    border: 1px solid $color-error-600;
+    border-radius: 12px;
+    p{
+        display: block;
+    }
+}
+.inputs{
+    // position: relative;
+    // height: 64px;
+   
+    // background-color: $color-background;
+    &__label{
+        font-size: 14px;
+        font-family: 'Poppins-Regular';
+        line-height: 16px;
+        color: $color-grey-600;
+        position: absolute;
+        line-height: 64px;
+        left: 16px;
+        transition: all 0.3s ease-in-out;
+        &--active{
+            top: 0;
+            line-height: 25px;
+            left: 16px;
+        }
+    }
+    & input{
+        border-radius: 12px;
+        border: 1px solid $color-grey-700;
+        padding: 16px 16px;
+        background-color: $color-background;
+        height: 64px;
+        width: 100%;
+        color:$color-grey-400;  
+        font-size: 16px;
+        font-family: 'Poppins-Regular';
+        line-height: 24px;
+        & .inputs--active{
+            padding-top: 30px;
+        }
+    }
+}
+.err{
+    // font-size: 14px;
+    font-family: 'Poppins-Regular';
+    line-height: 16px;
+    color: $color-error-600;
+    display: none;
+    // opacity: 0;
+   
+}
+.err--msg{
+    font-size: 14px;
+    font-family: 'Poppins-Regular';
+    text-align: right;
+    display: block;
+    color: $color-error-600;
+
+}
+ .err--star{
+        position: absolute;
+        z-index: 50;
+        left:-8px;
+        top: -8px;
+        display: block;
+    }
+ .noerr--star{
+        position: absolute;
+        z-index: 50;
+        left:-8px;
+        top: -8px;
+        display: none;
+    }

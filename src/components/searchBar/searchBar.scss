@@ -1,0 +1,67 @@
+// @import './styleConfig/variables.scss';
+@import '../../styleConfig/variables.scss';
+
+
+.search-bar{
+    position: relative;
+    margin-top: 76px;
+    margin-bottom: 52px;
+   
+    & img{
+        height: 24px;
+        width: 24px;   
+    }
+    & button{
+        height: 24px;
+        width: 24px;
+        background-color: transparent;
+        background-image: url('../../assets/img/x.png');
+        border: none;
+        position: absolute;
+        left: 300px;
+        bottom: 15px;
+        cursor: pointer;
+
+    }
+    &__label{
+        position: absolute;
+        font-family: 'Poppins-Regular';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-left: 60px;
+        color: $color-grey-400;
+        top: 20px;
+        transition: top 0.3s ease-in-out;
+        &--active{
+            position: absolute ;
+            top: 1.5px ;
+            font-size: 14px;
+            color: #475069;
+            // position: absolute;
+    }
+    }
+    &__input{
+        border: 1px solid $color-border;
+        color: $color-letter;
+        border-radius: 12px;
+        padding:20px 20px 20px 54px;
+        min-width: 344px;
+        background-color: $color-background;
+        background-image: url('../../assets/img/loop.png');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        display: flex;
+        background-position-x: 20px;
+        font-family: 'Poppins-Regular';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-left: 60px;
+    
+    }
+}

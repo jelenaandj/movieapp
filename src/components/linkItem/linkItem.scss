@@ -1,0 +1,15 @@
+@import '../../styleConfig/variables.scss';
+
+a{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 8px;
+    text-decoration: none;
+    border: none;
+    color: $color-letter;
+    align-items: center;
+    &:hover{
+        color: $color-hovered;
+    }
+}

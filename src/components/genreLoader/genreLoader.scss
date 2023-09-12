@@ -1,0 +1,11 @@
+@import '../../styleConfig/variables.scss';
+
+.genre-loader > div{
+    display: flex;
+    // gap: 32px;
+    flex-wrap: wrap;
+}
+.genre-loader{
+    background-color:$color-background-pill-nav;
+    margin-bottom: 54px;
+}

@@ -1,0 +1,19 @@
+@import '../../styleConfig/mixin.scss';
+.list{
+    display: flex;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.paragraph{
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    margin-left: 40px;
+    @include breakpoints($pc){
+        margin-left: 80px;
+    }
+}
+.btn-holder{
+    position: relative;
+    top: 50px;
+}

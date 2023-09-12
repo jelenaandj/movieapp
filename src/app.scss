@@ -1,0 +1,22 @@
+@import './styleConfig/variables.scss';
+@import './styleConfig/typography.scss';
+@import './styleConfig/reset.scss';
+@import './styleConfig/grid.scss';
+@import './styleConfig/mixin.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-background;
+    background-image: url(./assets/img/bg.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0 auto;
+    // max-width: 1200px;
+    font-family: 'Poppins-Regular';
+    color: $color-letter;
+}
+

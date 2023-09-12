@@ -1,0 +1,9 @@
+$mobile:370px;
+$tablet:834px;
+$pc:1279px;
+
+@mixin breakpoints($viewport){
+    @media screen and (min-width:$viewport) {
+        @content
+    }
+}
